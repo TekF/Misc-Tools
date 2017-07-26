@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>StringToHex</title>
+		<script>
+			function StringToHex( string )
+			{
+				var decl = "uint[]( ";
+				for ( i=0; i < string.length; i++ )
+				{
+					decl += "0x" + string.charCodeAt(i).toString(16);
+					if ( i < string.length-1 )
+						decl += ", ";
+				}
+				decl += " )";
+				document.forms['myForm']['hex'].value = decl;
+			}
+		</script>
+	</head>
+	<body>
+		<!-- form passing textbox contents to StringToHex -->
+		<form name="myForm">
+			<textarea name="textbox" rows="5" cols="30"></textarea>
+			<button type="button" onclick="return StringToHex(document.forms['myForm']['textbox'].value)">Submit</button> 
+			<textarea name="hex" rows="5" cols="30"></textarea>
+		</form>
+	</body>
+</html>
