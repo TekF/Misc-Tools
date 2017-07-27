@@ -13,7 +13,7 @@
 					if ( i < string.length-1 )
 						decl += ", ";
 				}
-				decl += " )";
+				decl += " ) // length "+string.length.toString();
 				document.forms['myForm']['hex'].value = decl;
 
 				var decl = "uint[]( ";
@@ -30,7 +30,7 @@
 					if ( i < string.length-4 )
 						decl += ", ";
 				}
-				decl += " )";
+				decl += " ) // length "+string.length.toString();
 				document.forms['myForm']['hex32'].value = decl;
 			}
 		</script>
