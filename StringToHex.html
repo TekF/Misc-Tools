@@ -9,7 +9,7 @@
 				var decl = "uint[]( ";
 				for ( i=0; i < string.length; i++ )
 				{
-					decl += "0x" + string.charCodeAt(i).toString(16);
+					decl += "0x" + string.charCodeAt(i).toString(16)+"U";
 					if ( i < string.length-1 )
 						decl += ", ";
 				}
