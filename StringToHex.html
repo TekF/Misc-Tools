@@ -38,9 +38,12 @@
 	<body>
 		<!-- form passing textbox contents to StringToHex -->
 		<form name="myForm">
-			<textarea name="textbox" rows="5" cols="30"></textarea>
-			<button type="button" onclick="return StringToHex(document.forms['myForm']['textbox'].value)">Submit</button> 
-			<textarea name="hex" rows="5" cols="30"></textarea>
+			Input:<br>
+			<textarea name="textbox" rows="5" cols="30"></textarea><br>
+			<button type="button" onclick="return StringToHex(document.forms['myForm']['textbox'].value)">Submit</button><br>
+			Bytes:<br>
+			<textarea name="hex" rows="5" cols="30"></textarea><br>
+			Packed in uint32:<br>
 			<textarea name="hex32" rows="5" cols="30"></textarea>
 		</form>
 	</body>
